@@ -46,7 +46,7 @@ if __name__ == "__main__":
         ids = []
     # Query for arXiv API
     query = "(cat:cs.RO)"
-    max_results = 100
+    max_results = 25
     search_and_send(query, max_results, ids, api_url)
     # Update log of published data
     with open(published_filename, "wb") as f:
