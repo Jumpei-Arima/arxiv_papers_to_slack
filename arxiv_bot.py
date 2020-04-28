@@ -27,10 +27,10 @@ def search_and_send(query, max_results, ids, api_url):
                 ids.append(url)
                 counter = counter + 1
         if counter == 0 and len(entries) < max_results:
-            requests.post(api_url, json={"text": "Currently, there is no available papers"})
+            # requests.post(api_url, json={"text": "Currently, there is no available papers"})
             return 0
         elif counter == 0 and len(entries) == max_results:
-            requests.post(api_url, json={"text": "Currently, there is no available papers and full query"})
+            # requests.post(api_url, json={"text": "Currently, there is no available papers and full query"})
             return 0
 
 
